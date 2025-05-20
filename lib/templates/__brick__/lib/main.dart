@@ -93,17 +93,17 @@ Future<void> main() async {
       child: EasyLocalization(
         supportedLocales: locales,
         startLocale: CommonDataCubit.instance.state.currentLanguage?.toLocale() ?? CommonDataCubit.instance.getSystemLanguage().toLocale(),
-        path: SoulfoodCoreConstants.translationsPath,
+        path: AppConstants.translationsPath,
         assetLoader: TranslationsLoader(),
-        child: const {{project_name}}(),
+        child: const MyApp(),
       ),
     ),
     // ),
   );
 }
 
-class {{project_name}} extends StatelessWidget {
-  const {{project_name}}({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
