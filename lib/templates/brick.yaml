@@ -1,0 +1,8 @@
+name: tetrix_app
+description: A Flutter project template with provider and custom configuration.
+version: 0.1.0
+vars:
+  name:
+    type: string
+    description: The name of the Flutter project
+    prompt: What is the project name?

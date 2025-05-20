@@ -1,0 +1,18 @@
+#!/bin/bash
+# This file was created by tetrix_cli activation script.
+# Package: tetrix_cli
+# Executable: tetrix_cli
+# Script: tetrix_cli
+if [ -f "/Users/panospavlatos/.pub-cache/global_packages/tetrix_cli/bin/tetrix_cli.dart.snapshot" ]; then
+  dart "/Users/panospavlatos/.pub-cache/global_packages/tetrix_cli/bin/tetrix_cli.dart.snapshot" "$@"
+  # The VM exits with code 253 if the snapshot version is out-of-date.
+  # If it is, we need to delete it and run "pub global run" manually.
+  exit_code=$?
+  if [ $exit_code != 253 ]; then
+    exit $exit_code
+  fi
+  rm -f "/Users/panospavlatos/.pub-cache/global_packages/tetrix_cli/bin/tetrix_cli.dart.snapshot"
+  dart pub global run tetrix_cli:tetrix_cli "$@"
+else
+  dart pub global run tetrix_cli:tetrix_cli "$@"
+fi
