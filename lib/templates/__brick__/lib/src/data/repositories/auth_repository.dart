@@ -1,10 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-
-import 'src/core/constants/api_consts.dart';
-import 'src/core/constants/common_consts.dart';
-import 'src/services/http/base_api_provider.dart';
-import 'src/services/network/api_response.dart';
+import 'package:{{name}}/src/core/constants/api_consts.dart';
+import 'package:{{name}}/src/core/constants/common_consts.dart';
+import 'package:{{name}}/src/services/http/base_api_provider.dart';
+import 'package:{{name}}/src/services/network/api_response.dart';
 
 class AuthRepository extends BaseApiProvider {
   AuthRepository._internal();

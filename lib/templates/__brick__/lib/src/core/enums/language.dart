@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'src/core/config/keys/locale_keys.dart';
+import 'package:{{name}}/src/core/config/keys/locale_keys.dart';
 
 enum Language {
   el,

@@ -1,13 +1,12 @@
 import 'package:dio/dio.dart';
-
-import 'src/core/constants/api_consts.dart';
-import 'src/core/constants/common_consts.dart';
-import 'src/cubits/authentication_cubit/authentication_cubit.dart';
-import 'src/cubits/common_data_cubit/common_data_cubit.dart';
-import 'src/data/models/country_model_netv/country_model_netv.dart';
-import 'src/data/models/language.dart';
-import 'src/services/http/base_api_provider.dart';
-import 'src/services/network/api_response.dart';
+import 'package:{{name}}/src/core/constants/api_consts.dart';
+import 'package:{{name}}/src/core/constants/common_consts.dart';
+import 'package:{{name}}/src/cubits/authentication_cubit/authentication_cubit.dart';
+import 'package:{{name}}/src/cubits/common_data_cubit/common_data_cubit.dart';
+import 'package:{{name}}/src/data/models/country_model_netv/country_model_netv.dart';
+import 'package:{{name}}/src/data/models/language.dart';
+import 'package:{{name}}/src/services/http/base_api_provider.dart';
+import 'package:{{name}}/src/services/network/api_response.dart';
 
 class CommonDataRepository extends BaseApiProvider {
   CommonDataRepository._internal();

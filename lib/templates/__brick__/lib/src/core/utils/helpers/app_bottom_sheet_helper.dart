@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:{{name}}/src/core/theme/app_theme.dart';
+import 'package:{{name}}/src/presentation/widgets/app_widgets/app_bottom_navigation_bar.dart';
+import 'package:{{name}}/src/presentation/widgets/app_widgets/app_bottom_sheet.dart';
+import 'package:{{name}}/src/router/route_observer.dart';
 
 import 'main.dart';
-import 'src/core/theme/app_theme.dart';
-import 'src/presentation/widgets/app_widgets/app_bottom_navigation_bar.dart';
-import 'src/presentation/widgets/app_widgets/app_bottom_sheet.dart';
-import 'src/router/route_observer.dart';
 
 class AppBottomSheetHelper {
   static void showBottomSheet(

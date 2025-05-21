@@ -4,15 +4,14 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
-
-import 'src/core/enums/common_enums.dart';
-import 'src/core/enums/language.dart' as language;
-import 'src/core/utils/nullable.dart';
-import 'src/data/models/country_model_netv/country_model_netv.dart';
-import 'src/data/models/language.dart';
-import 'src/data/models/translation_model.dart';
-import 'src/data/repositories/common_data_repository.dart';
-import 'src/services/network/api_response.dart';
+import 'package:{{name}}/src/core/enums/common_enums.dart';
+import 'package:{{name}}/src/core/enums/language.dart' as language;
+import 'package:{{name}}/src/core/utils/nullable.dart';
+import 'package:{{name}}/src/data/models/country_model_netv/country_model_netv.dart';
+import 'package:{{name}}/src/data/models/language.dart';
+import 'package:{{name}}/src/data/models/translation_model.dart';
+import 'package:{{name}}/src/data/repositories/common_data_repository.dart';
+import 'package:{{name}}/src/services/network/api_response.dart';
 
 part 'common_data_state.dart';
 

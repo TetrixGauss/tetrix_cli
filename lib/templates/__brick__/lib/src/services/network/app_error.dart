@@ -1,4 +1,4 @@
-import 'src/core/utils/helpers/crashlytics_helper.dart';
+import 'package:{{name}}/src/core/utils/helpers/crashlytics_helper.dart';
 
 class AppError {
   AppError({

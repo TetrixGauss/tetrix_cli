@@ -6,3 +6,7 @@ vars:
     type: string
     description: The name of the Flutter project
     prompt: What is the project name?
+  appName:
+    type: string
+    description: The PascalCase version of the project name (e.g., MyTestApp)
+    prompt: What is the app name? (Derived from name)

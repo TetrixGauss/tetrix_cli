@@ -3,14 +3,13 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/src/widgets/navigator.dart';
-
-import '../../router/routes.dart';
-import '../network/app_error.dart';
-import 'src/core/enums/status_code.dart';
-import 'src/cubits/authentication_cubit/authentication_cubit.dart';
-import 'src/router/route_observer.dart';
-import 'src/services/network/api_response.dart';
-import 'src/services/network/http.dart';
+import 'package:{{name}}/network/app_error.dart';
+import 'package:{{name}}/router/routes.dart';
+import 'package:{{name}}/src/core/enums/status_code.dart';
+import 'package:{{name}}/src/cubits/authentication_cubit/authentication_cubit.dart';
+import 'package:{{name}}/src/router/route_observer.dart';
+import 'package:{{name}}/src/services/network/api_response.dart';
+import 'package:{{name}}/src/services/network/http.dart';
 
 class BaseApiProvider {
   final Dio dio = Http.instance.dio;

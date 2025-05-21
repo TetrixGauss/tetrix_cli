@@ -2,8 +2,7 @@ import 'package:atcom_companion_app/src/core/enums/common_enums.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:loader_overlay/loader_overlay.dart';
-
-import 'src/main.dart';
+import 'package:{{name}}/src/main.dart';
 
 part 'app_state.dart';
 

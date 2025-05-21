@@ -2,11 +2,10 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:easy_localization/easy_localization.dart';
-
-import 'src/core/enums/status_code.dart';
-import 'src/services/network/api_response.dart';
-import 'src/services/network/app_error.dart';
-import 'src/services/network/http.dart';
+import 'package:{{name}}/src/core/enums/status_code.dart';
+import 'package:{{name}}/src/services/network/api_response.dart';
+import 'package:{{name}}/src/services/network/app_error.dart';
+import 'package:{{name}}/src/services/network/http.dart';
 
 class BaseApiService {
   final Dio dio = Http.instance.dio;

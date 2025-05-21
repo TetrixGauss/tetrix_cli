@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
-
-import 'src/services/network/app_error.dart';
+import 'package:{{name}}/src/services/network/app_error.dart';
 
 class ApiResponse<T> {
   ApiResponse({

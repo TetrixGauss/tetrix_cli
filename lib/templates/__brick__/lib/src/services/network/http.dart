@@ -2,11 +2,10 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-
-import 'src/core/constants/common_consts.dart';
-import 'src/core/utils/dev/print_color.dart';
-import 'src/cubits/authentication_cubit/authentication_cubit.dart';
-import 'src/cubits/common_data_cubit/common_data_cubit.dart';
+import 'package:{{name}}/src/core/constants/common_consts.dart';
+import 'package:{{name}}/src/core/utils/dev/print_color.dart';
+import 'package:{{name}}/src/cubits/authentication_cubit/authentication_cubit.dart';
+import 'package:{{name}}/src/cubits/common_data_cubit/common_data_cubit.dart';
 
 class Http {
   Http._internal();

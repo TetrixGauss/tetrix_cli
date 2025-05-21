@@ -3,9 +3,8 @@ import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/services.dart';
-
-import 'src/core/constants/app_constants.dart';
-import 'src/cubits/common_data_cubit/common_data_cubit.dart';
+import 'package:{{name}}/src/core/constants/app_constants.dart';
+import 'package:{{name}}/src/cubits/common_data_cubit/common_data_cubit.dart';
 
 class TranslationsLoader extends AssetLoader {
   @override

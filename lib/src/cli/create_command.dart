@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:args/command_runner.dart';
 import 'package:mason/mason.dart';
 import 'package:path/path.dart' as path;
+import 'package:recase/recase.dart';
 import 'package:yaml/yaml.dart';
 import 'package:yaml_edit/yaml_edit.dart';
 
@@ -147,7 +148,11 @@ class CreateCommand extends Command<int> {
       Brick.path(path.join(path.dirname(Platform.script.path), '..', 'lib', 'templates')),
     );
     final target = DirectoryGeneratorTarget(projectDir);
-    final files = await generator.generate(target, vars: {'name': name});
+    final vars = {
+      'name': name,
+      'appName': ReCase(name).pascalCase,
+    };
+    final files = await generator.generate(target, vars: vars);
     print('Generated files: ${files.map((f) => f.path).join(', ')}');
 
     print('Flutter project "$name" created successfully at ${projectDir.path}!');

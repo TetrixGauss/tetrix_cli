@@ -1,4 +1,0 @@
-enum ControlAffinity {
-  leading,
-  trailing,
-}

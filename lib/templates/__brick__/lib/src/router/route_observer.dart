@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'main.dart';
-import 'src/router/routes.dart';
+import 'package:{{name}}/main.dart';
+import 'package:{{name}}/src/router/routes.dart';
 
 class AppRouteObserver extends RouteObserver<ModalRoute<dynamic>> {
   factory AppRouteObserver() {

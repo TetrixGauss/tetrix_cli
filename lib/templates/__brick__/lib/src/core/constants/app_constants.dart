@@ -1,4 +1,4 @@
-class AppConstants {
+class {{appName}}Constants {
   static String translationsPath = 'assets/translations';
 
   static const Duration timeBeforeTokenExpireToTriggerRefreshToken = Duration(minutes: 15);

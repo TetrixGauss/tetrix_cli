@@ -12,20 +12,21 @@ import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:loader_overlay/loader_overlay.dart';
 import 'package:path_provider/path_provider.dart';
 
-import '../../src/core/constants/api_consts.dart';
-import '../../src/core/constants/atcom_companion_core_constants.dart';
-import '../../src/core/enums/language.dart';
-import '../../src/core/theme/app_theme.dart';
-import '../../src/core/utils/helpers/crashlytics_helper.dart';
-import '../../src/core/utils/helpers/translations_helper.dart';
-import '../../src/cubits/authentication_cubit/authentication_cubit.dart';
-import '../../src/cubits/common_data_cubit/common_data_cubit.dart';
-import '../../src/presentation/widgets/app_widgets/app_bottom_navigation_bar_menu.dart';
-import '../../src/presentation/widgets/app_widgets/app_scaffold.dart';
-import '../../src/presentation/widgets/app_widgets/app_screen.dart';
-import '../../src/router/route_generator.dart';
-import '../../src/router/route_observer.dart';
-import '../../src/services/network/http.dart';
+import 'package:{{name}}/src/core/constants/api_consts.dart';
+import 'package:{{name}}/src/core/constants/api_consts.dart';
+import 'package:{{name}}/src/core/constants/atcom_companion_core_constants.dart';
+import 'package:{{name}}/src/core/enums/language.dart';
+import 'package:{{name}}/src/core/theme/app_theme.dart';
+import 'package:{{name}}/src/core/utils/helpers/crashlytics_helper.dart';
+import 'package:{{name}}/src/core/utils/helpers/translations_helper.dart';
+import 'package:{{name}}/src/cubits/authentication_cubit/authentication_cubit.dart';
+import 'package:{{name}}/src/cubits/common_data_cubit/common_data_cubit.dart';
+import 'package:{{name}}/src/presentation/widgets/app_widgets/app_bottom_navigation_bar_menu.dart';
+import 'package:{{name}}/src/presentation/widgets/app_widgets/app_scaffold.dart';
+import 'package:{{name}}/src/presentation/widgets/app_widgets/app_screen.dart';
+import 'package:{{name}}/src/router/route_generator.dart';
+import 'package:{{name}}/src/router/route_observer.dart';
+import 'package:{{name}}/src/services/network/http.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 final AppRouteObserver observer = AppRouteObserver();
@@ -93,17 +94,17 @@ Future<void> main() async {
       child: EasyLocalization(
         supportedLocales: locales,
         startLocale: CommonDataCubit.instance.state.currentLanguage?.toLocale() ?? CommonDataCubit.instance.getSystemLanguage().toLocale(),
-        path: AppConstants.translationsPath,
+        path: {{appName}}Constants.translationsPath,
         assetLoader: TranslationsLoader(),
-        child: const MyApp(),
+        child: const {{appName}}(),
       ),
     ),
     // ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class {{appName}} extends StatelessWidget {
+  const {{appName}}({super.key});
 
   // This widget is the root of your application.
   @override

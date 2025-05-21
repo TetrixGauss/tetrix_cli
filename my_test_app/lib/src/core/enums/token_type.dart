@@ -1,4 +1,0 @@
-enum TokenType {
-  store,
-  user,
-}

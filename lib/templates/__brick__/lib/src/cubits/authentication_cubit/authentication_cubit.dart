@@ -3,18 +3,17 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
-
-import 'src/core/constants/app_constants.dart';
-import 'src/core/enums/common_enums.dart';
-import 'src/core/enums/enums.dart';
-import 'src/core/utils/nullable.dart';
-import 'src/cubits/authentication_cubit/authentication_state.dart';
-import 'src/cubits/common_data_cubit/common_data_cubit.dart';
-import 'src/data/repositories/auth_repository.dart';
-import 'src/data/repositories/user_repository.dart';
-import 'src/main.dart';
-import 'src/router/routes.dart';
-import 'src/services/network/api_response.dart';
+import 'package:{{name}}/src/core/constants/app_constants.dart';
+import 'package:{{name}}/src/core/enums/common_enums.dart';
+import 'package:{{name}}/src/core/enums/enums.dart';
+import 'package:{{name}}/src/core/utils/nullable.dart';
+import 'package:{{name}}/src/cubits/authentication_cubit/authentication_state.dart';
+import 'package:{{name}}/src/cubits/common_data_cubit/common_data_cubit.dart';
+import 'package:{{name}}/src/data/repositories/auth_repository.dart';
+import 'package:{{name}}/src/data/repositories/user_repository.dart';
+import 'package:{{name}}/src/main.dart';
+import 'package:{{name}}/src/router/routes.dart';
+import 'package:{{name}}/src/services/network/api_response.dart';
 
 class AuthenticationCubit extends HydratedCubit<AuthenticationState> {
   AuthenticationCubit._internal() : super(const AuthenticationState());
